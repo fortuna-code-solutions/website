@@ -253,7 +253,10 @@ button, input, textarea { font: inherit; border: none; outline: none; }
   padding: 28px 36px; border-radius: var(--radius);
   background: var(--white); border: 1.5px solid var(--green-200);
   box-shadow: var(--shadow-md); gap: 20px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  cursor: pointer;
 }
+.about__founder-card:hover { border-color: var(--green-400); box-shadow: var(--shadow-lg); }
 .about__founder-info { text-align: center; }
 .about__founder-info h3 { font-size: 1.125rem; font-weight: 600; color: var(--gray-900); }
 .about__founder-info span { font-size: .8125rem; color: var(--green-600); font-weight: 500; }
@@ -265,8 +268,6 @@ button, input, textarea { font: inherit; border: none; outline: none; }
 .about__photo img {
   width: 100%; height: 100%; object-fit: cover;
 }
-.about__founder-card { transition: border-color var(--transition), box-shadow var(--transition); cursor: pointer; }
-.about__founder-card:hover { border-color: var(--green-400); box-shadow: var(--shadow-lg); }
 
 /* ===== TESTIMONIALS ===== */
 .testimonials {

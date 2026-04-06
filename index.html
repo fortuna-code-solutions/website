@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fortuna Code Solutions</title>
   <meta name="description" content="Fortuna Code Solutions — Software engineering, AI solutions, and cloud architecture.">
+  <meta property="og:title" content="Fortuna Code Solutions">
+  <meta property="og:description" content="Software engineering, AI solutions, and cloud architecture — delivered production-ready.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fortunacode.solutions">
+  <meta property="og:image" content="https://fortunacode.solutions/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fortuna Code Solutions">
+  <meta name="twitter:description" content="Software engineering, AI solutions, and cloud architecture — delivered production-ready.">
+  <meta name="twitter:image" content="https://fortunacode.solutions/og-image.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,12 +36,13 @@
         <svg class="logo-clover" viewBox="0 0 200 200" width="28" height="28"><path d="M100,100 C88,82 65,58 65,40 C65,20 80,12 100,30 C120,12 135,20 135,40 C135,58 112,82 100,100Z" fill="currentColor"/><path d="M100,100 C118,88 142,65 160,65 C180,65 188,80 170,100 C188,120 180,135 160,135 C142,135 118,112 100,100Z" fill="currentColor"/><path d="M100,100 C112,118 135,142 135,160 C135,180 120,188 100,170 C80,188 65,180 65,160 C65,142 88,118 100,100Z" fill="currentColor"/><path d="M100,100 C82,112 58,135 40,135 C20,135 12,120 30,100 C12,80 20,65 40,65 C58,65 82,88 100,100Z" fill="currentColor"/></svg>
         Fortuna Code Solutions
       </a>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Clients</a></li>
         <li><a href="#contact" class="nav__cta">Contact</a></li>
       </ul>
     </div>
@@ -173,7 +183,7 @@
           <span>Founder</span>
         </div>
         <div class="about__photo">
-          <img src="photo.jpg" alt="Joseph Rocky Holms — Founder">
+          <img src="photo.jpg" alt="Joseph Rocky Holms — Founder" loading="lazy">
         </div>
       </a>
     </div>
@@ -187,7 +197,7 @@
 
         <div class="testimonial">
           <div class="testimonial__top">
-            <img class="testimonial__photo" src="customers/tim-jones.jpg" alt="Tim Jones">
+            <img class="testimonial__photo" src="customers/tim-jones.jpg" alt="Tim Jones" loading="lazy">
             <div class="testimonial__meta">
               <a href="https://www.linkedin.com/in/tim-jones-580b9b19/" target="_blank" rel="noopener" class="testimonial__name">Tim Jones</a>
               <span class="testimonial__role">CRO — Encoda</span>
@@ -200,7 +210,7 @@
 
         <div class="testimonial">
           <div class="testimonial__top">
-            <img class="testimonial__photo" src="customers/luke-hill.png" alt="Luke Hill">
+            <img class="testimonial__photo" src="customers/luke-hill.jpg" alt="Luke Hill" loading="lazy">
             <div class="testimonial__meta">
               <span class="testimonial__name">Luke Hill</span>
               <span class="testimonial__role">Founder — Mild Foundation</span>
@@ -213,7 +223,7 @@
 
         <div class="testimonial">
           <div class="testimonial__top">
-            <img class="testimonial__photo" src="customers/marc-lapides.jpg" alt="Marc Lapides">
+            <img class="testimonial__photo" src="customers/marc-lapides.jpg" alt="Marc Lapides" loading="lazy">
             <div class="testimonial__meta">
               <a href="https://www.linkedin.com/in/marclapides/" target="_blank" rel="noopener" class="testimonial__name">Marc Lapides</a>
               <span class="testimonial__role">President — DMP</span>
@@ -248,9 +258,9 @@
           </li>
         </ul>
         <form class="contact__form" id="contactForm">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <textarea name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+          <input type="text" name="name" placeholder="Name" required aria-label="Name">
+          <input type="email" name="email" placeholder="Email" required aria-label="Email">
+          <textarea name="message" rows="4" placeholder="Tell us about your project..." required aria-label="Message"></textarea>
           <button type="submit" class="btn btn--primary">Send Message</button>
         </form>
       </div>

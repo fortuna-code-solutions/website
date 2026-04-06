@@ -9,16 +9,19 @@
     nav.classList.toggle("scrolled", window.scrollY > 20);
   }, { passive: true });
 
+  function setMenuOpen(open) {
+    toggle.classList.toggle("active", open);
+    links.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open);
+    document.body.style.overflow = open ? "hidden" : "";
+  }
+
   toggle.addEventListener("click", () => {
-    toggle.classList.toggle("active");
-    links.classList.toggle("open");
+    setMenuOpen(!links.classList.contains("open"));
   });
 
   links.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => {
-      toggle.classList.remove("active");
-      links.classList.remove("open");
-    })
+    a.addEventListener("click", () => setMenuOpen(false))
   );
 
   const observer = new IntersectionObserver(
