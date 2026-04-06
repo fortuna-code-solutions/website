@@ -28,7 +28,7 @@
     { threshold: 0.15 }
   );
 
-  document.querySelectorAll(".svc, .about, .contact__grid").forEach((el) => {
+  document.querySelectorAll(".svc, .about, .testimonial, .contact__grid").forEach((el) => {
     el.classList.add("reveal");
     observer.observe(el);
   });
